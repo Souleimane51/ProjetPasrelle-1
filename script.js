@@ -24,8 +24,6 @@ const words = [  'angle', 'armoire', 'banc', 'bureau', 'cabinet', 'carreau', 'ch
 var randomWord = Math.floor(Math.random() * words.length);
 var wordOut = words[randomWord]
 var wordTab = [...wordOut];
-console.log(wordTab);
-console.log(wordOut);
 
 hiddenWord.forEach(word => {
   word.textContent = wordOut.toUpperCase();
