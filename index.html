@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="images/icon.png" type="image/png">
+    <link rel="stylesheet" href="style.css">
+    <title>Le Pendu</title>
+</head>
+<body>
+    <section class="game">
+        <header>
+            <h1>Le Pendu (Gardez le en vie 😉)</h1>
+        </header>
+        <div class="container">
+            <div class="state">
+                <img src="images/1.png" alt="pendu" class="picture1">
+                <img src="images/2.png" alt="pendu" class="picture2">
+                <img src="images/3.png" alt="pendu" class="picture3">
+                <img src="images/4.png" alt="pendu" class="picture4">
+                <img src="images/5.png" alt="pendu" class="picture5">
+                <img src="images/6.png" alt="pendu" class="picture6">
+                <img src="images/7.png" alt="pendu" class="picture7">
+                <img src="images/8.png" alt="pendu" class="picture8">
+                <img src="images/9.png" alt="pendu" class="picture9">
+                <img src="images/10.png" alt="pendu" class="picture10">
+                <img src="images/11.png" alt="pendu" class="picture11">
+
+            </div>
+            <div class="subContainer">
+                <div class="noLife">
+                    <h3>Vous avez <span class="life">xx</span> vies</h3>
+                </div> 
+                <div class="result"></div>     
+            </div>
+        </div>
+
+        <div class="formContainer">
+            <form class="form">
+                <input placeholder="Tapez un mot a 7 letrres" class="input" autofocus>
+                <button type="submit" class="go">Go</button>
+            </form>
+        </div>
+        <div class="answer">
+            <div class="keyboard">
+                <button id="A" value="a" class="button">A</button>
+                <button id="B" value="b" class="button">B</button>
+                <button id="C" value="c" class="button">C</button>
+                <button id="D" value="d" class="button">D</button>
+                <button id="E" value="e" class="button">E</button>
+                <button id="F" value="f" class="button">F</button>
+                <button id="G" value="g" class="button">G</button>
+                <button id="H" value="h" class="button">H</button>
+                <button id="I" value="i" class="button">I</button>
+                <button id="J" value="j" class="button">J</button>
+                <button id="K" value="k" class="button">K</button>
+                <button id="L" value="l" class="button">L</button>
+                <button id="M" value="m" class="button">M</button>
+                <button id="N" value="n" class="button">N</button>
+                <button id="O" value="o" class="button">O</button>
+                <button id="P" value="p" class="button">P</button>
+                <button id="Q" value="q" class="button">Q</button>
+                <button id="R" value="r" class="button">R</button>
+                <button id="S" value="s" class="button">S</button>
+                <button id="T" value="t" class="button">T</button>
+                <button id="U" value="u" class="button">U</button>
+                <button id="V" value="v" class="button">V</button>
+                <button id="W" value="w" class="button">W</button>
+                <button id="X" value="x" class="button">X</button>
+                <button id="Y" value="y" class="button">Y</button>
+                <button id="Z" value="z" class="button">Z</button>
+            </div>
+        </div>
+        
+    </section>
+    <section class="won">
+        <div >
+            <h3 class="h3">Felicitation tu as trouvé le mot: <span class="hiddenWord">...</span></h3>
+            <p class="p">BIEN JOUER !</p>
+            <button id="newGame1" type="button" onClick="window.location.reload()">Nouvelle partie</button>
+        </div>
+    </section>
+    <section class="lost">
+        <div >
+            <h3 class="h3">Oups, il semblerait que tu est perdus, le mot a trouver été: <span class="hiddenWord">...</span>,<br> ceci devrait te remonter le morale:</h3>
+            <p class="p">“Pour faire un bon vainqueur il faut être bon perdant.”</p>
+            <button id="newGame2" type="button" onClick="window.location.reload()">Nouvelle partie</button>
+        </div>
+    </section>
+    <script src="script.js"></script>
+</body>
+</html>
