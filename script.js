@@ -33,11 +33,11 @@ hiddenWord.forEach(word => {
 // Fonction si le joueur gagne ou perd + la fonction pour check si le joueur a trouvé les bonnes lettres:
 
 function lost() {
-  lose.style.display = 'flex';
+  lose.style.transform = 'translateY(0%)';
 }
 
 function won() {
-  win.style.display = 'flex';
+  win.style.transform = 'translateY(0%)';
 }
 
 function arrayEquals(a, b) {
@@ -113,6 +113,7 @@ form.addEventListener('submit', (e) => {
         input.value = '';
         life--;
         index++
+        img[index].style.display = 'block';
     }
     else {
         fullWordResult.textContent = wordOut.toUpperCase() + ' ';
